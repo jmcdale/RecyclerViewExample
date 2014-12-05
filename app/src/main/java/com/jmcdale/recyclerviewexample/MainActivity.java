@@ -7,8 +7,15 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.Arrays;
+import java.util.List;
+
 
 public class MainActivity extends Activity {
+
+    private static final List<String> adjectives = Arrays.asList(new String[]{
+            "Awesome", "Peculiar", "Green", "Sad", "Gross", "Lovely", "Insane",
+            "Compostable", "Blue", "Wooden", "Grotesque", "Beautiful"});
 
     private RecyclerView recyclerView;
 
