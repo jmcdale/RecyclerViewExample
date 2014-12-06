@@ -26,6 +26,8 @@ public class MainActivity extends Activity {
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+        recyclerView.setAdapter(new RecyclerViewStringListAdapter(adjectives));
+
     }
 
 
