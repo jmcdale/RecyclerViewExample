@@ -38,7 +38,9 @@ public class MainActivity extends Activity {
 
             @Override
             public void onSwiped(RecyclerView.ViewHolder viewHolder, int swipeDir) {
-
+                int position = viewHolder.getAdapterPosition();
+                adjectives.remove(position);
+                recyclerView.getAdapter().notifyItemRemoved(position);
             }
         };
         ItemTouchHelper itemTouchHelper = new ItemTouchHelper(simpleItemTouchCallback);
